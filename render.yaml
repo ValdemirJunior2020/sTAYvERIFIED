@@ -1,0 +1,29 @@
+# Render Blueprint: StayVerified backend
+# Docs: https://docs.render.com/blueprint-spec
+
+services:
+  - type: web
+    runtime: node
+    name: stayverified-server
+    plan: free
+
+    # Run the Node/Express API from the cloned repo
+    rootDir: sTAYvERIFIED/server
+    buildCommand: npm install
+    startCommand: npm start
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5050
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4.1-mini
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
