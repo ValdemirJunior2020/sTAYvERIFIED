@@ -187,7 +187,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.page,
   },
   content: {
-    padding: spacing.lg,
+    paddingTop: spacing.xl,
+    paddingHorizontal: spacing.lg,
     paddingBottom: 120,
   },
   headerCard: {

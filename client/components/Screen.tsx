@@ -27,7 +27,11 @@ export default function Screen({
 
   return (
     <SafeAreaView style={[styles.safe, style]}>
-      <StatusBar barStyle={Platform.OS === "ios" ? "dark-content" : "dark-content"} />
+      <StatusBar
+        barStyle={Platform.OS === "ios" ? "dark-content" : "dark-content"}
+        backgroundColor="transparent"
+        translucent
+      />
       <KeyboardAvoidingView
         style={styles.flex}
         behavior={Platform.OS === "ios" ? "padding" : undefined}
