@@ -8,7 +8,9 @@ services:
     plan: free
 
     # Run the Node/Express API from the cloned repo
-    rootDir: sTAYvERIFIED/server
+    # On Render, the repo is cloned into /opt/render/project/src,
+    # where the "server" folder already exists at the root.
+    rootDir: server
     buildCommand: npm install
     startCommand: npm start
 
