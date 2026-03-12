@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Link } from 'expo-router';
-import { Screen } from '@/components/Screen';
+import Screen from '@/components/Screen';
 import { AppInput } from '@/components/AppInput';
 import { GradientButton } from '@/components/GradientButton';
 import { GlassCard } from '@/components/GlassCard';

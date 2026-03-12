@@ -13,6 +13,10 @@ export const colors = {
   shadow: "rgba(31,54,88,0.10)",
 };
 
+export const gradients = {
+  button: ["#2f80ed", "#1f67c2"],
+};
+
 export const spacing = {
   xs: 6,
   sm: 10,
@@ -31,6 +35,7 @@ export const radius = {
 
 export const theme = {
   colors,
+  gradients,
   spacing,
   radius,
 };
